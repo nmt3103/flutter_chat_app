@@ -15,29 +15,29 @@ class SigninOrSignupScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
         child: Column(
           children: [
-            Spacer(flex: 2),
+            const Spacer(flex: 2),
             Image.asset(
               MediaQuery.of(context).platformBrightness == Brightness.light
                   ? "assets/images/Logo_light.png"
                   : "assets/images/Logo_dark.png",
               height: 146,
             ),
-            Spacer(),
+            const Spacer(),
             PrimaryButton(
               text: "Sign In",
               press: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ChatsScreen(),
+                  builder: (context) => const ChatsScreen(),
                 ),
               ),
             ),
-            SizedBox(height: kDefaultPadding * 1.5),
+            const SizedBox(height: kDefaultPadding * 1.5),
             PrimaryButton(
                 color: Theme.of(context).colorScheme.secondary,
                 text: "Sign Up",
                 press: () {}),
-            Spacer(flex: 2),
+            const Spacer(flex: 2),
           ],
         ),
       )),

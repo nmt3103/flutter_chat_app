@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_chat_app/constants.dart';
 
 import '../signin_or_signup_screen/signin_or_signup_screen.dart';
@@ -41,7 +39,7 @@ class WelcomeScreen extends StatelessWidget {
                 onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => SigninOrSignupScreen(),
+                        builder: (context) => const SigninOrSignupScreen(),
                       ),
                     ),
                 child: Row(
